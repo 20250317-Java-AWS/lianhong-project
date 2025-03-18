@@ -16,4 +16,4 @@ Concepts
 
 - Anime Details – Displays more info, trailers, and reviews.
 - Search – Lets users find anime by title.
-- Watchlist – Saves favorite anime for later.
+- Watchlist/FavoriteList– Saves favorite anime for later.
