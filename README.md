@@ -15,9 +15,9 @@ The app first displays the **setup** part of the joke (like a question). A secon
 - ✅ **Consume a RESTful API** – Uses the [JokeAPI](https://v2.jokeapi.dev/) to fetch real-time jokes based on user-selected categories.
 - ✅ **User Interaction** – Users can choose joke categories, get a new joke, and reveal the punchline.
 - ✅ **Multiple Components** – The app includes:
-  - `HomeComponent`: Displays category options and joke interaction
-  - *(Optional)* `FavoritesComponent`: View and manage saved jokes
-  - *(Optional)* `SvgComponent`: Turn jokes into downloadable SVGs
+  - `HomeComponent`: Displays category options and two liner jokes with interaction
+  - `SingleComponent`: Displays category options and one liner jokes with interaction
+  - `FavoritesComponent`: View and manage saved jokes
 
 ---
 
@@ -26,13 +26,20 @@ The app first displays the **setup** part of the joke (like a question). A secon
 - 🟢 **Home Page (`/`)**
   - Select multiple joke categories
   - "New Joke" button fetches a random joke
+  - Add to Favorite button add the joke to the Favorites.
+  - Reset button reset everything.
   - Display the setup first
-  - "What?" button reveals the punchline
+  - "What/Why?" button reveals the punchline
 
-- ⭐ *(Optional)*
-  - Save favorite jokes
-  - Generate SVGs from jokes
-  - Share jokes on social media
+- 🟢 **One-Liner (`/single`)**
+  - Select multiple joke categories from drop-down
+  - "New Joke" button fetches a random one part joke from the selected category
+  - "New Joke" button reveals the next joke in the selected category.
+  - 
+- 🟢 **Favorites (`/favorites`)**
+  - Display all the favorite jokes.
+  - "Remove" button the selected joke from the list and remove from display.
+    
 
 ---
 
