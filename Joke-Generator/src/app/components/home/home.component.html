@@ -1,0 +1,39 @@
+<div class="container">
+  
+
+    <app-nav/>
+    <!-- Joke Display -->
+    <div *ngIf="joke && !error" class="joke-card">
+      <p class="setup">Setup: {{ joke.setup }}</p>
+  
+      <div class="delivery-section">
+        <button *ngIf="!showDelivery" class="secondary-button" (click)="revealDelivery()">What/Why?:</button>
+        <p *ngIf="showDelivery" class="delivery">👉 {{ joke.delivery }}</p>
+      </div>
+      <button class="favorite-button" (click)="saveToFavorites()">❤️ Save to Favorites</button>
+    </div>
+
+
+  <!-- Category Selection -->
+  <div class="category-section">
+    <label *ngFor="let category of categories" class="category-label">
+      <input
+        type="radio"
+        name="category"
+        [value]="category"
+        [(ngModel)]="selectedCategory">
+      {{ category }}
+    </label>
+  </div>
+
+  <!-- Joke Controls -->
+  <div class="controls">
+    <button class="primary-button"
+        [disabled]="!selectedCategory || isLoading"
+        (click)="fetchJoke()">New Joke</button>
+
+    <button *ngIf="joke" class="secondary-button" (click)="resetJoke()">Reset</button>
+  </div>
+
+
+</div>

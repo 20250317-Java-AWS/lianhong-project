@@ -1,0 +1,101 @@
+/* Global styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Custom card styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Custom button styles */
+.primary-button, .secondary-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.primary-button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: #0b5ed7;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.secondary-button:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Custom text styles */
+.text-muted {
+  color: #6c757d;
+}
+
+/* Custom alert styles */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Custom container styles */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Custom spinner styles */
+.spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0d6efd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom link styles */
+a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+<div class="container">
+  <app-nav/>
+    <h2>🗨️ One-Liner Jokes</h2>
+  
+        <!-- Category Dropdown -->
+    <div class="category-section">
+      <label for="category">Choose a Category:</label>
+      <select id="category" [(ngModel)]="selectedCategory">
+        <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+      </select>
+    </div>
+
+        <!-- Joke Display -->
+        <div *ngIf="joke" class="card">
+          <p>{{ joke }}</p>
+          <p class="text-muted">Category: {{ jokeCategory }}</p>
+        </div>
+      
+
+  
+    <!-- New Joke Button -->
+    <div class="controls">
+      <button class="primary-button" (click)="fetchJoke()">New Joke</button>
+      <a routerLink="/" class="secondary-button">← Back</a>
+
+    </div>
+  
+   
+</div>
