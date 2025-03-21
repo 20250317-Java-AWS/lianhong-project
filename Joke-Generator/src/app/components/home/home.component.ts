@@ -19,7 +19,6 @@ export class HomeComponent {
   selectedCategory: string = '';
   joke: any = null;
   showDelivery = false;
-  isLoading = false;
   error: string | null = null;
 
   constructor(private favService: FavoriteJokesService) {}
@@ -53,11 +52,9 @@ export class HomeComponent {
         } else {
           this.error = 'No joke found. Try again!';
         }
-        this.isLoading = false;
       })
       .catch(() => {
         this.error = 'Failed to fetch joke. Please try again.';
-        this.isLoading = false;
       });
   }
 

@@ -3,7 +3,7 @@
     
 
         <!-- Joke Display -->
-        <div *ngIf="joke" class="card">
+        <div *ngIf="joke" class="joke-card">
           <h2>🗨️ One-Liner Jokes</h2>
   
         <!-- Category Dropdown -->
@@ -13,8 +13,11 @@
         <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
       </select>
     </div>
-          <p>{{ joke }}</p>
-          <p class="text-muted">Category: {{ jokeCategory }}</p>
+    <div class="card">
+      <p>{{ joke }}</p>
+      <p class="text-muted">Category: {{ jokeCategory }}</p>
+    </div>
+         
 
           <!-- New Joke Button -->
     <div class="controls">

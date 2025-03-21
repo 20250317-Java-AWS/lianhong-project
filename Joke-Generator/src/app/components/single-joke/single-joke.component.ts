@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NavComponent } from "../nav/nav.component";
 
 @Component({
   selector: 'app-single-joke',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule, RouterModule, NavComponent],
+  imports: [CommonModule, FormsModule, RouterModule, NavComponent],
   templateUrl: './single-joke.component.html',
   styleUrls: ['./single-joke.component.css']
 })
