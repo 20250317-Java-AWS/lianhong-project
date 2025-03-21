@@ -18,7 +18,6 @@ export class SingleJokeComponent implements OnInit {
 
   joke: string = '';
   jokeCategory: string = '';
-  isLoading = false;
   error: string | null = null;
 
   ngOnInit(): void {
@@ -26,7 +25,7 @@ export class SingleJokeComponent implements OnInit {
     this.fetchJoke();
   }
   fetchJoke() {
-    this.isLoading = true;
+
     this.error = null;
     this.joke = '';
     this.jokeCategory = '';
@@ -42,11 +41,10 @@ export class SingleJokeComponent implements OnInit {
         } else {
           this.error = 'No joke found.';
         }
-        this.isLoading = false;
+
       })
       .catch(() => {
         this.error = 'Failed to fetch joke.';
-        this.isLoading = false;
       });
   }
 }

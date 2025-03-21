@@ -1,15 +1,15 @@
 <div class="container">
   <app-nav/>
+  <div class="joke-card">
     <h2>❤️ Favorite Jokes</h2>
   
-    <div *ngIf="favorites.length === 0" class="empty-state">
+    <div *ngIf="favorites.length === 0">
       <p>No favorite jokes yet.</p>
-      <a routerLink="/" class="secondary-button">Go Back</a>
     </div>
   
     <div *ngFor="let joke of favorites; let i = index" class="joke-card">
       <p><strong>Setup:</strong> {{ joke.setup }}</p>
       <p><strong>Punchline:</strong> {{ joke.delivery }}</p>
-      <button class="danger-button" (click)="remove(i)">Remove</button>
+      <button (click)="remove(i)">Remove</button>
     </div>
-  </div>
+  </div> </div>

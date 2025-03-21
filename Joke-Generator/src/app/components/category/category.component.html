@@ -1,7 +1,7 @@
 <div class="container mt-5 text-center">
     <h2>🤣 {{ category }} Joke</h2>
   
-    <div *ngIf="joke" class="card mx-auto p-4 mt-3" style="max-width: 600px;">
+    <div *ngIf="joke" class="card" style="max-width: 600px;">
       <p class="fw-bold">Setup: {{ joke.setup }}</p>
   
       <button *ngIf="!showDelivery" class="btn btn-outline-secondary" (click)="revealDelivery()">What?</button>

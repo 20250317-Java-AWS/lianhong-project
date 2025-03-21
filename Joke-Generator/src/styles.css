@@ -50,52 +50,18 @@ h2 {
   color: #6c757d;
 }
 
-.secondary-button:hover {
-  background-color: #6c757d;
-  color: white;
-}
 
-/* Custom text styles */
-.text-muted {
-  color: #6c757d;
-}
 
-/* Custom alert styles */
-.error-message {
-  background-color: #f8d7da;
-  color: #721c24;
-  padding: 1rem;
-  border-radius: 4px;
+.controls {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.joke-card {
+  background-color: rgba(255, 230, 2, 0.925);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 0 auto;
   max-width: 600px;
-  margin: 0 auto;
-}
-
-/* Custom container styles */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 0 1rem;
-}
-
-/* Custom spinner styles */
-.spinner {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 4px solid #f3f3f3;
-  border-top: 4px solid #0d6efd;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 0 auto;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Custom link styles */
-a.active {
-  font-weight: bold;
-  text-decoration: underline;
 }
