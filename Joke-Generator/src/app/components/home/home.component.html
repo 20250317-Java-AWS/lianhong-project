@@ -3,7 +3,7 @@
 
     <app-nav/>
     <!-- Joke Display -->
-    <div *ngIf="joke && !error" class="joke-card">
+    <div *ngIf="joke" class="joke-card">
       <p class="setup">Setup: {{ joke.setup }}</p>
   
       <div class="delivery-section">
