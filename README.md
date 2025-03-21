@@ -1,18 +1,47 @@
-#The Office Quote Generator
-##Description
+# Joke Generator 🤣
 
-<b>The Office Quote Generator</b> is an Angular Single Page Application (SPA) that consumes "The Office" API to display quotes from five iconic characters: <b> Michael Scott, Dwight Schrute, Jim Halpert, Kevin Malone, and Creed Bratton </b> for now, other will be add later.
+## Description  
+The **Joke Generator** is an Angular Single Page Application (SPA) that uses the free [JokeAPI](https://v2.jokeapi.dev/) to fetch and display jokes based on user-selected categories.  
 
-On the <b>home page </b>, users see buttons with character images. Clicking a button fetches a random quote from that character. After receiving a quote, users can click a "<b>Convert to SVG</b>" button to generate an SVG version of the text.
+On the **home page**, users can select one or more joke categories such as **Programming**, **Pun**, **Misc**, or **Dark**. When they click the **"New Joke"** button, the app fetches a random joke from those selected categories.  
 
-##Concepts
+The app first displays the **setup** part of the joke (like a question). A second button, labeled **"What?"**, lets the user reveal the **delivery** or punchline of the joke.
 
-✅ Consume a RESTful API – The application fetches real-time quotes from "The Office" API.
+---
 
-✅ User Interaction – Users can click character buttons to get random quotes and convert them to SVG format.
+## Concepts  
 
-✅ Multiple Components – The application consists of multiple Angular components, including:
+- ✅ **SPA Route Navigation** – All interaction happens within a single page. Additional routes like `/favorites` or `/svg` can be added later.
+- ✅ **Consume a RESTful API** – Uses the [JokeAPI](https://v2.jokeapi.dev/) to fetch real-time jokes based on user-selected categories.
+- ✅ **User Interaction** – Users can choose joke categories, get a new joke, and reveal the punchline.
+- ✅ **Multiple Components** – The app includes:
+  - `HomeComponent`: Displays category options and joke interaction
+  - *(Optional)* `FavoritesComponent`: View and manage saved jokes
+  - *(Optional)* `SvgComponent`: Turn jokes into downloadable SVGs
 
-    - Home Component – Displays character buttons.
-    - Quote Component – Shows fetched quotes.
-    - SVG Generator Component – Converts quote text into an SVG.
+---
+
+## Features
+
+- 🟢 **Home Page (`/`)**
+  - Select multiple joke categories
+  - "New Joke" button fetches a random joke
+  - Display the setup first
+  - "What?" button reveals the punchline
+
+- ⭐ *(Optional)*
+  - Save favorite jokes
+  - Generate SVGs from jokes
+  - Share jokes on social media
+
+---
+
+## Technologies Used
+
+- **Frontend Framework**: Angular  
+- **API**: [JokeAPI](https://v2.jokeapi.dev/)  
+- **Routing**: Angular Router  
+- **HTTP**: Angular HttpClient  
+- **Styling**: CSS / Bootstrap  
+
+---
