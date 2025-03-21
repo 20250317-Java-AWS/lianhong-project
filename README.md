@@ -1,19 +1,18 @@
-# Anime Explorer
+#The Office Quote Generator
+##Description
 
-An Angular Single Page Application (SPA) that uses the Jikan API to show anime details. 
-Users can browse trending anime, search for titles, view trailers and reviews, and save favorites to their watchlist.
+<b>The Office Quote Generator</b> is an Angular Single Page Application (SPA) that consumes "The Office" API to display quotes from five iconic characters: <b> Michael Scott, Dwight Schrute, Jim Halpert, Kevin Malone, and Creed Bratton </b> for now, other will be add later.
 
-On the home page, users see a list of popular anime. Clicking on an anime opens a details page with more information. Users can also search for anime by title and add favorites to their personal watchlist.
+On the <b>home page </b>, users see buttons with character images. Clicking a button fetches a random quote from that character. After receiving a quote, users can click a "<b>Convert to SVG</b>" button to generate an SVG version of the text.
 
-Concepts
-✅ SPA Route Navigation – Clicking on an anime opens its details page (/anime/:id). Users can also search for anime (/search) and go to their watchlist.
+##Concepts
 
-✅ Consume a RESTful API – The app gets real-time anime details from the Jikan API.
+✅ Consume a RESTful API – The application fetches real-time quotes from "The Office" API.
 
-✅ User Interaction – Users can search, view details, add favorites, and manage a watchlist.
+✅ User Interaction – Users can click character buttons to get random quotes and convert them to SVG format.
 
-✅ Multiple Components – The app has different Angular components:
+✅ Multiple Components – The application consists of multiple Angular components, including:
 
-- Anime Details – Displays more info, trailers, and reviews.
-- Search – Lets users find anime by title.
-- Watchlist/FavoriteList– Saves favorite anime for later.
+    - Home Component – Displays character buttons.
+    - Quote Component – Shows fetched quotes.
+    - SVG Generator Component – Converts quote text into an SVG.
